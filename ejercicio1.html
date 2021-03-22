@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <title>Actividad 1</title>
+</head>
+
+<body>
+    <form class="py-3" id="all">
+
+        <button type="submit" class="btn btn-outline-success">Mostrar Todo</button>
+    </form>
+    <form class="py-2 row col-sm" id="name">
+
+        <button type="submit" class="btn btn-outline-success">Mostrar por Nombres</button>
+        <input class="py-2 rounded-0 border" type="text" id="nombre" placeholder="name">
+
+    </form>
+    <form class="py-2 row col-sm" id="code">
+
+        <button type="submit" class="btn btn-outline-success">Mostrar por codigo Alfabetico</button>
+        <input class="py-2 rounded-0 border" type="text" id="codigo" placeholder="codigo">
+
+    </form>
+
+    <form class="py-2 row col-sm" id="codes">
+        <button type="submit" class="btn btn-outline-success">Mostrar varios por codigo Alfabetico</button>
+        <h3 class="px-2">1:</h3><input class="py-2 rounded-0 border" type="text" id="codigo1" placeholder="codigo1">
+        <h3 class="px-2">2:</h3><input class="py-2 rounded-0 border" type="text" id="codigo2" placeholder="codigo2">
+        <h3 class="px-2">3:</h3><input class="py-2 rounded-0 border" type="text" id="codigo3" placeholder="codigo3">
+    </form>
+
+    <form class="py-2 row col-sm" id="currency">
+        <button type="submit" class="btn btn-outline-success">Mostrar por abreviación de divisas</button>
+        <input class="py-2 rounded-0 border" type="text" id="moneda" placeholder="currency">
+    </form>
+    <form class="py-2 row col-sm" id="lang">
+        <button type="submit" class="btn btn-outline-success">Mostrar por idioma</button>
+        <input class="py-2 rounded-0 border" type="text" id="idioma" placeholder="lang">
+    </form>
+    <form class="py-2 row col-sm" id="capital">
+        <button type="submit" class="btn btn-outline-success">Mostrar por Capital</button>
+        <input class="py-2 rounded-0 border" type="text" id="cap" placeholder="capital">
+    </form>
+    <form class="py-2 row col-sm" id="callingcode">
+        <button type="submit" class="btn btn-outline-success">Mostrar por codigo telefónico</button>
+        <input class="py-2 rounded-0 border" type="text" id="calcode" placeholder="callingcode">
+    </form>
+    <form class="py-2 row col-sm" id="region">
+        <button type="submit" class="btn btn-outline-success">Mostrar por Región</button>
+        <input class="py-2 rounded-0 border" type="text" id="regional" placeholder="region">
+    </form>
+    <form class="py-2 row col-sm" id="regionalbloc">
+        <button type="submit" class="btn btn-outline-success">Mostrar por bloque regional</button>
+        <input class="py-2 rounded-0 border" type="text" id="regionbloc" placeholder="regionalbloc">
+    </form>
+    <form class="py-2 row col-sm" id="services">
+
+        <button type="submit" class="btn btn-outline-success">Mostrar 3 paises en concreto</button>
+        <h3 class="px-2">1:</h3><input class="py-2 rounded-0 border" type="text" id="valor1" placeholder="tabla1">
+        <h3 class="px-2">2:</h3><input class="py-2 rounded-0 border" type="text" id="valor2" placeholder="tabla2">
+        <h3 class="px-2">3:</h3><input class="py-2 rounded-0 border" type="text" id="valor3" placeholder="tabla3">
+    </form>
+    <table class="table table-responsive table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Región</th>
+                <th scope="col">Capital</th>
+                <th scope="col">Codigo Alfabetico</th>
+                <th scope="col">Abreviación de divisas</th>
+                <th scope="col">Idioma</th>
+                <th scope="col">Codigo Telefonico</th>
+                <th scope="col">Población</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <script src="ajax.js">
+    </script>
+
+
+</body>
+
+</html>
